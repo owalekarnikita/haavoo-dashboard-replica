@@ -1,0 +1,94 @@
+.main-head {
+    padding: 10px;
+    color: white;
+    padding-left: 25%;
+    padding-right: 25%;
+    
+    .sec1 {
+        display: flex;
+        font-size: 14px;
+        .f1 {
+            flex: 2;
+
+        }
+        .f2 {
+            flex: 1;
+            .icon {
+                margin-top: 40px;
+            }
+            select {
+                padding: 5px 10px;
+                border-radius: 20px;
+                cursor: pointer;
+                background: transparent;
+                color: white;
+            }
+        }
+    }
+    .down {
+        margin-top: 30px;
+    }
+    .sec2 {
+        display: flex;
+        
+        .sp3{
+            flex: 1;
+        }
+        .sp1 {
+            margin-top: 10px;
+            flex: 2;
+            a {
+                padding: 5px 10px;
+                text-decoration: none;
+                color: white;
+                
+            }
+            .btn1 {
+                background-color: rgb(255, 162, 0);
+                border-radius: 20px;
+                border: 1px solid black;
+                padding: 10px;
+                font-weight: bold;
+                font-size: 16px;
+                color: white;
+            }
+            .btn2 {
+                background-color: rgb(255, 58, 58);
+                border-radius: 20px;
+                border: 1px solid black;
+                padding: 10px;
+                font-weight: bold;
+                font-size: 16px;
+                color: white;
+            }
+        }
+    }
+    .sec3 {
+        select {
+            padding: 15px;
+            border-radius: 15px;
+            width: 35%;
+            font-size: large;
+        }
+        input {
+            padding: 15px;
+            border-radius: 15px 0px 0px 15px;
+            width: 55%;
+            font-size: large;
+        }
+        button {
+            padding: 15px;
+            background-color: rgb(255, 58, 58);
+            border-radius: 0px 15px 15px 0px;
+            border: 0px;
+            font-size: large;
+        }
+    }
+}
+
+@media only screen and (max-width : 1500px) {
+    .main-head {
+        padding-left: 15% !important;
+        padding-right: 15% !important;
+    }
+}

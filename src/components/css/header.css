@@ -1,0 +1,116 @@
+.main-head {
+  padding: 10px;
+  color: white;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.main-head .sec1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+}
+
+.main-head .sec1 .f1 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.main-head .sec1 .f2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.main-head .sec1 .f2 .icon {
+  margin-top: 40px;
+}
+
+.main-head .sec1 .f2 select {
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  background: transparent;
+  color: white;
+}
+
+.main-head .down {
+  margin-top: 30px;
+}
+
+.main-head .sec2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-head .sec2 .sp3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.main-head .sec2 .sp1 {
+  margin-top: 10px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.main-head .sec2 .sp1 a {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.main-head .sec2 .sp1 .btn1 {
+  background-color: #ffa200;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}
+
+.main-head .sec2 .sp1 .btn2 {
+  background-color: #ff3a3a;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}
+
+.main-head .sec3 select {
+  padding: 15px;
+  border-radius: 15px;
+  width: 35%;
+  font-size: large;
+}
+
+.main-head .sec3 input {
+  padding: 15px;
+  border-radius: 15px 0px 0px 15px;
+  width: 55%;
+  font-size: large;
+}
+
+.main-head .sec3 button {
+  padding: 15px;
+  background-color: #ff3a3a;
+  border-radius: 0px 15px 15px 0px;
+  border: 0px;
+  font-size: large;
+}
+
+@media only screen and (max-width: 1500px) {
+  .main-head {
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+  }
+}
+/*# sourceMappingURL=header.css.map */
