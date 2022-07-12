@@ -1,16 +1,26 @@
-.div {
+$pad : 25%;
+$red : #e51c1c;
+$pzero : 0%;
+
+.foot-div {
     color: white;
-    padding: 10px;
-    padding-left: 25%;
-    padding-right: 25%;
-    padding-bottom: 0%;
-    font-size: 14px;
+    padding-bottom: $pzero;
+    font-size: 15px;
+    line-height: 1.5em;
+    word-spacing: 3px;
+    // letter-spacing: 0.5px;
 
     .main-foot {
+        padding: 10px;
+        // padding-left: $pad;
+        // padding-right: $pad;
         display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         column-gap: 1em;
+        row-gap: 2em;
         .foot1 {
-            flex: 2;
+            width: 300px;
             .font {
                 font-size: 28px;
             }
@@ -19,7 +29,7 @@
             }
             a {
                 padding: 5px 10px;
-                padding-left: 0%;
+                padding-left: $pzero;
                 text-decoration: none;
                 color: white;   
             }
@@ -30,41 +40,35 @@
             }
         }
         .foot2 {
-            flex: 1.5;
+            width: 200px;
             a {
                 padding: 5px 10px;
-                padding-left: 0%;
+                padding-left: $pzero;
                 text-decoration: none;
                 color: white;   
             }
         }
         .foot3 {
-            flex: 2;
+            width: 300px;
         }    
         
     }
     .foot4 {
-        background-color: #e51c1c;
-        width: 100%;
-        display: flex;
         padding: 20px;
-        bottom: 0;
-        
-        .one {
-            flex: 1;
+        background-color: $red;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        bottom: $pzero;    
+        .one {   
+            width: 450px;
         }
         .two {
-            flex:1;
+            width: 450px;
             a {
                 color: white;
+                
             }
         }
-    }
-}
-
-@media only screen and (max-width : 1500px) {
-    .div {
-        padding-left: 15% !important;
-        padding-right: 15% !important;
     }
 }

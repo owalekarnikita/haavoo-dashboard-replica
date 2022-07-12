@@ -1,34 +1,41 @@
 .main-head {
   padding: 10px;
+  padding-bottom: 20px;
   color: white;
-  padding-left: 25%;
-  padding-right: 25%;
 }
 
 .main-head .sec1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 14px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 15px;
 }
 
 .main-head .sec1 .f1 {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  width: 300px;
 }
 
 .main-head .sec1 .f2 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 300px;
 }
 
-.main-head .sec1 .f2 .icon {
+.main-head .sec1 .f3 {
+  width: 300px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.main-head .sec1 .f3 .icon {
   margin-top: 40px;
 }
 
-.main-head .sec1 .f2 select {
+.main-head .sec1 .f3 select {
   padding: 5px 10px;
   border-radius: 20px;
   cursor: pointer;
@@ -37,26 +44,27 @@
 }
 
 .main-head .down {
-  margin-top: 30px;
+  margin-top: 40px !important;
 }
 
 .main-head .sec2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main-head .sec2 .sp3 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 300px;
 }
 
 .main-head .sec2 .sp1 {
   margin-top: 10px;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  width: 600px;
 }
 
 .main-head .sec2 .sp1 a {
@@ -76,7 +84,7 @@
 }
 
 .main-head .sec2 .sp1 .btn2 {
-  background-color: #ff3a3a;
+  background-color: #e51c1c;
   border-radius: 20px;
   border: 1px solid black;
   padding: 10px;
@@ -85,26 +93,45 @@
   color: white;
 }
 
+.main-head .sec3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .main-head .sec3 select {
   padding: 15px;
   border-radius: 15px;
-  width: 35%;
+  width: 300px;
   font-size: large;
 }
 
-.main-head .sec3 input {
-  padding: 15px;
+.main-head .sec3 .searchbtn {
+  width: 600px;
+}
+
+.main-head .sec3 .searchbtn input {
+  padding: 18px;
   border-radius: 15px 0px 0px 15px;
-  width: 55%;
+  width: 80%;
   font-size: large;
 }
 
-.main-head .sec3 button {
-  padding: 15px;
-  background-color: #ff3a3a;
+.main-head .sec3 .searchbtn button {
+  padding: 17px;
+  background-color: #e51c1c;
   border-radius: 0px 15px 15px 0px;
-  border: 0px;
-  font-size: large;
+  font-size: larger;
+  color: white;
+}
+
+.main-head .sec3 .searchbtn button .dwn {
+  margin-top: 10px !important;
 }
 
 @media only screen and (max-width: 1500px) {

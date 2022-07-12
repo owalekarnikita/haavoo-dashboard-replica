@@ -1,0 +1,40 @@
+.card {
+    background-color: rgb(246, 242, 242);
+    border-radius: 10px;
+    border: 1px solid rgb(202, 192, 192);
+    box-sizing: border-box;
+    .card-title{
+        font-size: large;
+        padding-left: 10px;
+        margin: 10px;
+    }
+    .card-below {
+        background-color: white;
+        color: rgb(111, 107, 107);
+        border-radius: 0px 0px 10px 10px;
+        padding:5px;
+        line-height: 2em;
+        height: 600px;
+        overflow: scroll;
+        overflow-x: hidden;
+        .dwn {
+            margin-top: 0px;
+            background-color: white;
+            border: 0px;
+            float: right;
+        }
+        .icon-dwn {
+            margin-top: 5px;
+        }
+        .hide {
+            display: none;
+        }
+        .show {
+            display: block;
+            padding: 10px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            font-size: small;
+        }
+    }
+}

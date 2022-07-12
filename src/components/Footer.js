@@ -5,15 +5,15 @@ import { AiFillFacebook ,AiOutlineTwitter,AiFillYoutube,AiFillLinkedin,AiFillIns
 
 const Footer = () => {
   return (
-    <div className='div'>
+    <div className='foot-div'>
         <div className='main-foot'>
             <section className='foot1'>
                 <span> <b> KEEP IN TOUCH </b></span><br/>
                 <span className='font'> <AiFillFacebook /> <AiOutlineTwitter /> <AiFillYoutube /> <AiFillLinkedin /> <AiFillInstagram /> </span>
                 <br/>
                 <span>
-                    <img src='../images/appstore.png' width='48%'/>&nbsp;&nbsp;
-                    <img src='../images/googleplay.png' width='48%'/>
+                    <img src='../images/appstore.png' width='45%'/>&nbsp;&nbsp;
+                    <img src='../images/googleplay.png' width='45%'/>
                 </span>
                 <br/>
                 <span>
@@ -25,7 +25,7 @@ const Footer = () => {
                     <a href='./'>Terms and Conditions </a><br/>
                 </span>
             </section>
-
+            <br/>
             <section className='foot2'>
                 <b>LISTING BY CATEGORIES </b>
                 <br/>
@@ -57,10 +57,10 @@ const Footer = () => {
                     <a href='./'> Building </a><br/>
                     <a href='./'> Cloth & Footware </a>
             </section>
-
+            <br/>
             <section className='foot3'>
                     <b> BOOK PROFESSIONALS FROM YOUR PHONE </b>
-                    <img src='../images/mobile.png' />
+                    <img src='../images/mobile.png' width='100%'/>
             </section>
         </div>
         <div className='foot4'>

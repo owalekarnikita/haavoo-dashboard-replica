@@ -1,0 +1,50 @@
+.container {
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1em;
+  letter-spacing: 0.3px;
+  line-height: 30px;
+}
+
+.container .img {
+  width: 300px;
+}
+
+.container .img img {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.container .imgdata {
+  padding-left: 10px;
+}
+
+.container .imgdata h1 {
+  font-size: 22px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.container .imgdata .second, .container .imgdata .third {
+  font-size: 20px;
+}
+
+.container .imgdata .forth {
+  font-size: 18px;
+}
+
+.container .imgdata .btndata {
+  background-color: #e51c1c;
+  color: white;
+  font-size: 20px;
+  border: 0px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=business.css.map */

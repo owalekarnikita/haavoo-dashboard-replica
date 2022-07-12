@@ -10,7 +10,8 @@ const Header = () => {
     <div className='main-head'>
         <section className='sec1'>
             <span className='f1'> Customer Care: +91 90747 97177</span>
-            <span className='f2'> <span className='icon'><IoMdPin /> </span>Select Location &nbsp;
+            <span className='f2'></span>
+            <span className='f3'> <span className='icon'><IoMdPin /> </span>Select Location &nbsp;
                     Kozhikode <span className='down'><AiFillCaretDown/></span>
             </span>
         </section>
@@ -22,13 +23,13 @@ const Header = () => {
                 <a href='./'> About </a> |
                 <a href='./'> Contact</a>
                 <button className='btn1'> Register My Business </button> &nbsp;
-                <button className='btn2'>Login/Sign Up <span className='down'><AiFillCaretDown/></span></button>
+                <button className='btn2'>Login/Sign Up <span className='dwn'><AiFillCaretDown/></span></button>
             </span>
         </section>
         <br/>
         <section className='sec3'>
             <select>
-                <option><input type='checkbox' id='chk1'/>Abhiyagiri</option>
+                <option>Abhiyagiri</option>
                 <option>Adivaram Pudupadi</option>
                 <option>Abhiyagiri</option>
                 <option>Adivaram Pudupadi</option>
@@ -38,8 +39,10 @@ const Header = () => {
                 <option>Adivaram Pudupadi</option>
             </select>
             &nbsp;
-            <input type='search' id='search' placeholder='Search'/>
-            <button> <span className='down'><FiSearch/></span></button>
+            <div className='searchbtn'>
+                <input type='search' id='search' placeholder='Search'/>
+                <button> <span className='dwn'><FiSearch/></span></button>
+            </div>
         </section>
     </div>
   )

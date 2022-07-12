@@ -1,4 +1,106 @@
 .main-div {
   background-color: white;
 }
+
+.main-div .sort-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 15px;
+  font-size: 16px;
+  -webkit-box-shadow: 5px 5px 10px #e7e4e4;
+          box-shadow: 5px 5px 10px #e7e4e4;
+  background-color: white;
+}
+
+.main-div .sort-div .sort-icon {
+  padding-top: 3px;
+}
+
+.main-div .main-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1em;
+}
+
+.main-div .main-sec .card1 {
+  width: 250px;
+}
+
+.main-div .main-sec .card1 .card-first {
+  background-color: #f6f2f2;
+  border-radius: 10px;
+  border: 1px solid #cac0c0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-div .main-sec .card1 .card-first .card-title {
+  font-size: large;
+  padding-left: 10px;
+  margin: 10px;
+}
+
+.main-div .main-sec .card1 .card-first .card-below2 {
+  background-color: white;
+  border-top: 1px solid #cac0c0;
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px;
+  line-height: 2em;
+  color: #6f6b6b;
+}
+
+.main-div .main-sec .card1 .card-first .card-below2 .dwn {
+  margin-top: 0px;
+  background-color: white;
+  border: 0px;
+  float: right;
+}
+
+.main-div .main-sec .aside {
+  width: 700px;
+  padding: 10px;
+}
+
+.main-div .main-sec .aside a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.main-div .main-sec .aside div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-div .main-sec .aside div .a1 {
+  border-radius: 10px 0px 0px 10px;
+  border: 1px solid lightgray;
+  padding: 20px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.main-div .main-sec .aside div .a2 {
+  border-radius: 0px 10px 10px 0px;
+  border: 1px solid lightgray;
+  padding: 20px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
 /*# sourceMappingURL=main.css.map */
