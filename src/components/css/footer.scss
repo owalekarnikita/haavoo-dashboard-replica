@@ -1,46 +1,50 @@
-$pad : 25%;
+
 $red : #e51c1c;
 $pzero : 0%;
 
 .foot-div {
+    
     color: white;
     padding-bottom: $pzero;
     font-size: 15px;
     line-height: 1.5em;
     word-spacing: 3px;
-    // letter-spacing: 0.5px;
 
     .main-foot {
         padding: 10px;
-        // padding-left: $pad;
-        // padding-right: $pad;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        flex-direction: row;
         column-gap: 1em;
-        row-gap: 2em;
+        line-height: 2;
+        a {
+            padding: 5px 10px;
+            padding-left: $pzero;
+            text-decoration: none;
+            color: white;  
+            font-size: 14px; 
+        }
+        b {
+            padding: 20px;
+            padding-left: 0px;
+            margin-bottom: 2em;
+            font-size: large;
+        }
         .foot1 {
-            width: 300px;
+            width: 370px;
+            justify-content: left;
             .font {
-                font-size: 28px;
+                font-size: 36px;
             }
             span {
                 text-align: left;
             }
-            a {
-                padding: 5px 10px;
-                padding-left: $pzero;
-                text-decoration: none;
-                color: white;   
-            }
-            b {
-                padding: 20px;
-                padding-left: 0px;
-                margin-bottom: 2em;
-            }
+        
+            
         }
         .foot2 {
-            width: 200px;
+            width: 300px;
             a {
                 padding: 5px 10px;
                 padding-left: $pzero;
@@ -49,7 +53,7 @@ $pzero : 0%;
             }
         }
         .foot3 {
-            width: 300px;
+            max-width: 370px;
         }    
         
     }
@@ -70,5 +74,64 @@ $pzero : 0%;
                 
             }
         }
+    }
+}
+
+@media only screen and (max-width : 1000px)
+{
+    .main-foot {
+        display: flex;
+        flex-direction: column;
+        max-width: 900px;
+    }
+    .foot1 {
+        order: 3;
+        width: 700px !important;    
+        justify-content: left !important;
+        margin-top: -100px;
+        img {
+            width: 35%;
+        }
+        .font {
+            font-size: 45px !important;
+        }
+    }
+    .foot2 {
+        order: 1;
+    }
+    .foot3{
+        order: 2;
+    }
+}
+
+@media screen and (max-width : 720px) {
+    .foot1 {
+        margin-top: 0px !important;
+        align-items: center;
+    }
+}
+@media only screen and (max-width : 600px)
+{
+    .main-foot {
+        display: flex;
+        flex-direction: column !important;
+        padding-left: 30px !important;
+        
+    }
+    .foot1 {
+        order: 3;
+        max-width: 100%;
+        justify-content: left;
+    }
+    .foot2 {
+        order: 1;
+        margin-top: 0% !important;
+        min-width: 200px !important;
+    }
+    .foot3{
+        order: 2;
+    }
+    .foot4 {
+        font-size: smaller;
     }
 }

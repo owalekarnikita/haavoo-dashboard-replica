@@ -11,9 +11,9 @@ const Footer = () => {
                 <span> <b> KEEP IN TOUCH </b></span><br/>
                 <span className='font'> <AiFillFacebook /> <AiOutlineTwitter /> <AiFillYoutube /> <AiFillLinkedin /> <AiFillInstagram /> </span>
                 <br/>
-                <span>
-                    <img src='../images/appstore.png' width='45%'/>&nbsp;&nbsp;
-                    <img src='../images/googleplay.png' width='45%'/>
+                <span className='logos'>
+                    <img src='../images/appstore.png' width='45%' />&nbsp;&nbsp;
+                    <img src='../images/googleplay.png' width='45%' />
                 </span>
                 <br/>
                 <span>
@@ -25,7 +25,7 @@ const Footer = () => {
                     <a href='./'>Terms and Conditions </a><br/>
                 </span>
             </section>
-            <br/>
+
             <section className='foot2'>
                 <b>LISTING BY CATEGORIES </b>
                 <br/>
@@ -41,23 +41,23 @@ const Footer = () => {
                     <a href='./'> Photography </a>
                     <a href='./'> SuperMarket </a>
                     <a href='./'> Shops </a>
-                    <a href='./'> Medical </a><br/>
-                    <a href='./'> Fish and Meat </a><br/>
+                    <a href='./'> Medical </a>
+                    <a href='./'> Fish and Meat </a>
                     <a href='./'> Domestic Services </a>
                     <a href='./'> Books </a>
                     <a href='./'> Dance </a>
                     <a href='./'> Automobile </a>
-                    <a href='./'> Repairs/Services </a><br/>
-                    <a href='./'> Restaurants & Bakery </a><br/>
+                    <a href='./'> Repairs/Services </a>
+                    <a href='./'> Restaurants & Bakery </a>
                     <a href='./'> Sports & Recreations </a>
                     <a href='./'> Music </a>
                     <a href='./'> Education </a>
                     <a href='./'> Lifestyle </a>
                     <a href='./'> Driver </a>
-                    <a href='./'> Building </a><br/>
+                    <a href='./'> Building </a>
                     <a href='./'> Cloth & Footware </a>
             </section>
-            <br/>
+            
             <section className='foot3'>
                     <b> BOOK PROFESSIONALS FROM YOUR PHONE </b>
                     <img src='../images/mobile.png' width='100%'/>

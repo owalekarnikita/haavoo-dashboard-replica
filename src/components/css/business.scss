@@ -1,39 +1,62 @@
-.container {
-    padding: 20px;
-    border: 1px solid lightgray;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    letter-spacing: 0.3px;
-    line-height: 30px;
-    .img {
-        width: 300px;
-        img {
-            border: 1px solid lightgray;
-            border-radius: 10px;
+.business {
+    display: grid;
+    row-gap: 1.5em;
+    .container {
+        padding: 20px;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        display: flex;
+        gap: 1em;
+        letter-spacing: 0.3px;
+        line-height: 30px;
+        .img {
+            width: 50%;
+            img {
+                border: 1px solid lightgray;
+                border-radius: 10px;
+            }
+        }
+        .imgdata{
+            width: 50%;
+            text-align: left;
+            padding-left: 5px;
+            h1 {
+                font-size: 20px;
+                margin-top: 0px;
+                margin-bottom: 5px;
+            }
+            .second, .third {
+                font-size: 18px;
+            }
+            .forth {
+                font-size: 14px;
+                letter-spacing: normal;
+                line-height: normal;
+            }
+            .btndata {
+                background-color: #e51c1c;
+                color: white;
+                font-size: 16px;
+                border: 0px;
+                padding: 10px 20px;
+                border-radius: 20px;
+                box-shadow: 5px 5px 10x rgb(68, 67, 67); 
+            }
         }
     }
-    .imgdata{
-        padding-left: 10px;
-        h1 {
-            font-size: 22px;
-            margin-top: 0px;
-            margin-bottom: 5px;
+    
+}
+
+@media only screen and (max-width : 720px)
+{
+    .container {
+        display: flex;
+        flex-direction: column;
+        .img {
+            width: 100%;
         }
-        .second, .third,{
-            font-size: 20px;
-        }
-        .forth {
-            font-size: 18px;
-        }
-        .btndata {
-            background-color: #e51c1c;
-            color: white;
-            font-size: 20px;
-            border: 0px;
-            padding: 10px 20px;
-            border-radius: 20px;
+        .imgdata {
+            width: 100%;
         }
     }
 }

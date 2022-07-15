@@ -11,15 +11,104 @@
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 15px;
   font-size: 16px;
   -webkit-box-shadow: 5px 5px 10px #e7e4e4;
           box-shadow: 5px 5px 10px #e7e4e4;
   background-color: white;
+  text-align: right;
 }
 
-.main-div .sort-div .sort-icon {
-  padding-top: 3px;
+.main-div .sort-div .filter {
+  max-width: 400px;
+  display: none !important;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: white;
+  text-align: left;
+}
+
+.main-div .sort-div .sort {
+  width: 900px;
+}
+
+.main-div .sort-div .sort .sort-icon {
+  margin-top: 5px !important;
+  cursor: pointer;
+}
+
+.main-div .sort-div .sort .sort-dropdown {
+  display: none;
+}
+
+.main-div .sort-div .sort .sort-icon:focus + .sort-dropdown {
+  display: block;
+}
+
+.main-div .sidenav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.main-div .sidenav .filt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -35px;
+  font-size: larger;
+  padding: 5px 20px;
+}
+
+.main-div .sidenav .filt .name {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #c10303;
+}
+
+.main-div .sidenav .filt .closebtn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 5px;
+  text-align: end;
+  font-size: larger;
+}
+
+.main-div .sidenav .card1 {
+  padding: 20px;
+}
+
+.main-div .sidenav .card1 .card-first, .main-div .sidenav .card1 .card-third {
+  background-color: #f6f2f2;
+  border-radius: 10px;
+  border: 1px solid #cac0c0;
+}
+
+.main-div .sidenav .card1 .card-first .card-title, .main-div .sidenav .card1 .card-third .card-title {
+  font-size: large;
+  padding-left: 10px !important;
+  margin: 10px;
+}
+
+.main-div .sidenav .card1 .card-first .card-below2, .main-div .sidenav .card1 .card-third .card-below2 {
+  padding-left: 10px;
+  background-color: white;
+  border-top: 1px solid #cac0c0;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .main-div .main-sec {
@@ -31,11 +120,11 @@
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 1em;
+  gap: 1.5em;
 }
 
 .main-div .main-sec .card1 {
-  width: 250px;
+  width: 280px;
 }
 
 .main-div .main-sec .card1 .card-first {
@@ -69,8 +158,7 @@
 }
 
 .main-div .main-sec .aside {
-  width: 700px;
-  padding: 10px;
+  width: 750px;
 }
 
 .main-div .main-sec .aside a {
@@ -80,27 +168,86 @@
   font-size: 24px;
 }
 
-.main-div .main-sec .aside div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.main-div .main-sec .aside .body-navbar {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  text-align: center;
+  width: 100% !important;
 }
 
-.main-div .main-sec .aside div .a1 {
+.main-div .main-sec .aside .body-navbar .a1 {
   border-radius: 10px 0px 0px 10px;
   border: 1px solid lightgray;
-  padding: 20px;
-  padding-left: 120px;
-  padding-right: 120px;
+  padding: 15px;
+  width: 50%;
 }
 
-.main-div .main-sec .aside div .a2 {
+.main-div .main-sec .aside .body-navbar .a2 {
   border-radius: 0px 10px 10px 0px;
   border: 1px solid lightgray;
-  padding: 20px;
-  padding-left: 120px;
-  padding-right: 120px;
+  padding: 15px;
+  width: 50%;
+}
+
+.main-div .main-sec .aside .body-navbar .active {
+  background-color: #ff9d00;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main-sec .card1 {
+    width: 250px !important;
+  }
+  .main-sec .aside {
+    width: 650px !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main-div .sort-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-div .sort-div .filter {
+    display: block !important;
+    max-width: 300px;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: white;
+    text-align: left;
+  }
+  .main-div .sort-div .sort {
+    max-width: 300px !important;
+  }
+  .main-div .show {
+    width: 300px;
+  }
+  .main-div .hide {
+    width: 0px;
+  }
+  .main-div .main-sec {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .main-div .main-sec .card1 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .filter {
+    max-width: 200px !important;
+    text-align: left;
+  }
+  .sort {
+    max-width: 200px !important;
+  }
+  .show {
+    width: 250px !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */

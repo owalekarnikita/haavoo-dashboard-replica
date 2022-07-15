@@ -1,50 +1,78 @@
-.container {
+.business {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1.5em;
+}
+
+.business .container {
   padding: 20px;
   border: 1px solid lightgray;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   gap: 1em;
   letter-spacing: 0.3px;
   line-height: 30px;
 }
 
-.container .img {
-  width: 300px;
+.business .container .img {
+  width: 50%;
 }
 
-.container .img img {
+.business .container .img img {
   border: 1px solid lightgray;
   border-radius: 10px;
 }
 
-.container .imgdata {
-  padding-left: 10px;
+.business .container .imgdata {
+  width: 50%;
+  text-align: left;
+  padding-left: 5px;
 }
 
-.container .imgdata h1 {
-  font-size: 22px;
+.business .container .imgdata h1 {
+  font-size: 20px;
   margin-top: 0px;
   margin-bottom: 5px;
 }
 
-.container .imgdata .second, .container .imgdata .third {
-  font-size: 20px;
-}
-
-.container .imgdata .forth {
+.business .container .imgdata .second, .business .container .imgdata .third {
   font-size: 18px;
 }
 
-.container .imgdata .btndata {
+.business .container .imgdata .forth {
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.business .container .imgdata .btndata {
   background-color: #e51c1c;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   border: 0px;
   padding: 10px 20px;
   border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 10x #444343;
+          box-shadow: 5px 5px 10x #444343;
+}
+
+@media only screen and (max-width: 720px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .img {
+    width: 100%;
+  }
+  .container .imgdata {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=business.css.map */

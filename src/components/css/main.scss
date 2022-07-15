@@ -5,22 +5,94 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        align-items: center;
         padding: 15px;
         font-size: 16px;
         box-shadow: 5px 5px 10px rgb(231, 228, 228);
         background-color: white;
+        text-align: right;
         
-        .sort-icon {   
-            padding-top: 3px;
+        .filter {
+            max-width: 400px;
+            display: none !important;
+            border : none;
+            box-shadow:none;
+            background-color: white;
+            text-align: left;
         }
+        .sort {
+            width: 900px;
+            .sort-icon {   
+                margin-top: 5px !important;
+                cursor: pointer;
+            }
+            .sort-dropdown {
+                display: none;
+                
+            }
+            .sort-icon:focus + .sort-dropdown {
+                display: block;
+            }
+        }
+        
     }
+    .sidenav {
+        height: 100%;
+        width: 0px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        .filt {
+            display: flex;
+            margin-top: -35px;
+            font-size: larger;
+            padding: 5px 20px;
+            .name {
+                flex: 1;
+                color: rgb(193, 3, 3);
+
+            }
+            .closebtn {    
+                flex: 1;
+               margin-top: 5px;
+               text-align: end;
+               font-size: larger
+            }
+        }
+        .card1 {
+            padding: 20px;
+            .card-first,.card-third {
+                background-color: rgb(246, 242, 242);
+                border-radius: 10px;
+                border: 1px solid rgb(202, 192, 192);
+                .card-title{
+                    font-size: large;
+                    padding-left: 10px !important;
+                    margin: 10px;
+                }
+                .card-below2 {
+                    padding-left: 10px;
+                    background-color: white;
+                    border-top: 1px solid rgb(202, 192, 192);
+                    border-radius: 0px 0px 10px 10px;
+                }
+            }
+        }
+      }
+
     .main-sec{
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
-        gap: 1em;
+        flex-wrap: wrap;    
+        gap: 1.5em;
+        
         .card1{
-            width: 250px; 
+            width: 280px; 
             .card-first {
                 background-color: rgb(246, 242, 242);
                 border-radius: 10px;
@@ -48,33 +120,100 @@
             }
         }
         .aside {
-            width: 700px;
-            padding: 10px;
+            width: 750px;
             a {
                 text-decoration: none;
                 color: black;
                 font-weight: bold;
                 font-size: 24px;    
             }
-            div{
-                display: flex;
-                flex-wrap: wrap;
-                .a1 {
-                    border-radius: 10px 0px 0px 10px;
-                    border: 1px solid lightgray;
-                    padding: 20px;
-                    padding-left: 120px;
-                    padding-right: 120px;
-                }
-                .a2 {
-                    border-radius: 0px 10px 10px 0px;
-                    border: 1px solid lightgray;
-                    padding: 20px;
-                    padding-left: 120px;
-                    padding-right: 120px;
-                }
+            .body-navbar{
+                display: flex !important;
+                text-align: center;
+                width: 100% !important;
+                    .a1 {
+                        border-radius: 10px 0px 0px 10px;
+                        border: 1px solid lightgray;
+                        padding: 15px;
+                        width: 50%;
+                        
+                        
+                    }
+                    .a2 {
+                        border-radius: 0px 10px 10px 0px;
+                        border: 1px solid lightgray;
+                        padding: 15px;
+                        width: 50%;
+                    }
+                    .active {
+                        background-color: rgb(255, 157, 0);
+                    }
             }
         }
     }
       
+}
+
+@media only screen and (max-width : 1200px)
+{
+    .main-sec{
+        .card1 {
+            width: 250px !important;
+        }
+        .aside {
+            width : 650px !important;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width : 1000px)
+{
+    .main-div{
+        
+        .sort-div {
+            display: flex;
+            flex-wrap: wrap;
+            .filter {
+                display: block !important;  
+                max-width: 300px;
+                border : none;
+                box-shadow:none;
+                background-color: white;
+                text-align: left;         
+            }
+            .sort {
+                max-width: 300px !important;
+            }
+        }
+
+        .show {
+            width: 300px;
+        }
+        .hide {
+            width: 0px;
+        }
+        .main-sec {
+            padding-left: 10%;
+            padding-right: 10%;
+            .card1 {
+                display: none;
+            }
+            
+        }
+    }
+}
+
+@media only screen and (max-width : 600px){
+    .filter {
+        max-width: 200px !important;
+        text-align: left;
+    }
+    .sort {
+        max-width: 200px !important;
+    }
+    .show {
+        width: 250px !important;
+    }
 }

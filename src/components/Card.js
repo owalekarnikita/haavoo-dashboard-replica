@@ -134,15 +134,16 @@ const Card = () => {
             <div className='card-below'>
             { data.map((d , index)=> {
                 return(
-                    <div> 
+                    <div key={index}> 
                     <span> <input type='checkbox'/> {d.main}
                         <button className='dwn' onClick={() => dropdownHandler(index)}> <span className='icon-dwn'>{isClicked ? <AiOutlineUp/> :<AiOutlineDown />}</span> </button>
                         <div className={isClicked && isIndex === index ? 'show' :'hide'}>
-                        <input type='checkbox' /> {d.others[0]} <br></br>
-                        <input type='checkbox' /> {d.others[1]} <br></br>
-                        <input type='checkbox' /> {d.others[2]}  <br></br>
-                        <input type='checkbox' /> {d.others[3]} <br></br>
-                        <input type='checkbox' /> {d.others[4]}  <br></br>
+                            
+                            {d.others.map((a, index)=> {
+                                return( <div key={index}><input type='checkbox'/> {a} <br></br></div>
+                                );
+                            })}
+
                         </div>
                     </span>
                     </div>
