@@ -29,16 +29,16 @@
 }
 
 .main-head .sec1 .f1 {
-  width: 300px;
+  width: 350px;
   font-size: 13px;
 }
 
 .main-head .sec1 .f2 {
-  width: 300px;
+  width: 350px;
 }
 
 .main-head .sec1 .f3 {
-  width: 300px;
+  width: 350px;
   text-align: right;
 }
 
@@ -64,42 +64,12 @@
   display: none;
 }
 
-.main-head .sec1 .login-div {
-  z-index: 1;
-  position: absolute;
-  width: 850px;
-  height: 400px;
-  display: none;
-  border-radius: 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  top: 35px;
-  padding-left: 200px;
-}
-
-.main-head .sec1 .login-div:hover {
-  display: none;
-}
-
-.main-head .sec1 .show-login {
-  display: block;
-}
-
-.main-head .sec1 .hide-login {
-  display: none;
-}
-
-.main-head .sec1 .ham-class {
-  display: none;
-}
-
 .main-head .sec1 .sp1 {
-  width: 300px;
+  width: 400px;
 }
 
 .main-head .sec1 .sp2 {
-  width: 250px;
+  width: 300px;
   text-align: right;
   padding-top: 16px;
 }
@@ -112,7 +82,7 @@
 
 .main-head .sec1 .sp3 {
   margin-top: 10px;
-  max-width: 350px;
+  max-width: 400px;
   text-align: right;
 }
 
@@ -135,6 +105,159 @@
   font-size: 16px;
   color: white;
   cursor: pointer;
+}
+
+.main-head .sec1 .ham-class {
+  display: none;
+}
+
+.main-head .sec1 .select-city {
+  padding: 20px;
+  width: 800px;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.main-head .sec1 .select-city h2 {
+  font-size: 16px;
+}
+
+.main-head .sec1 .select-city .close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.main-head .sec1 .select-city .search-icon {
+  position: absolute;
+  z-index: 2;
+  margin-top: 12px;
+  margin-left: 10px;
+  color: gray;
+  font-size: 22px;
+}
+
+.main-head .sec1 .select-city .search-input {
+  position: relative;
+  padding: 15px;
+  padding-left: 35px;
+  width: 90%;
+  border-radius: 10px;
+  font-size: 15px;
+  border: 0.5px solid gray;
+}
+
+.main-head .sec1 .select-city .bgred {
+  background-color: #e51c1c;
+  padding: 0px 40px 0px 40px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-head .sec1 .select-city .bgred .bgflex {
+  width: 100px;
+  padding: 20px 10px 10px 10px;
+}
+
+.main-head .sec1 .select-city .bgred .bgflex .done {
+  padding: 1px 3px;
+  background-color: #ff9d00;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 3;
+  top: 172px;
+  margin-left: 80px;
+}
+
+.main-head .sec1 .select-city .bgred .bgflex .city-icon {
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 36px;
+  border: 1px solid #444343;
+  color: #444343;
+}
+
+.main-head .sec1 .select-city .bgred .bgflex .city-name {
+  font-size: small;
+  color: white;
+  line-height: normal !important;
+  padding-top: 5px;
+}
+
+.main-head .sec1 .select-city .bgred .bgflex .show-done {
+  display: block;
+}
+
+.main-head .sec1 .select-city .bgred .bgflex .hide-done {
+  display: none;
+}
+
+.main-head .sec1 .select-city .bgred .bgflex:hover {
+  opacity: 0.8;
+}
+
+.main-head .sec1 .select-city .bgred .bgflex:nth-child(2n) {
+  background-color: #c96a6a;
+}
+
+.main-head .sec1 .select-city .cities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+}
+
+.main-head .sec1 .select-city .cities span {
+  width: 25%;
+  text-align: left;
+}
+
+.main-head .sec1 .city-show {
+  display: block;
+}
+
+.main-head .sec1 .city-hide {
+  display: none;
+}
+
+.main-head .sec1 .login-div {
+  z-index: 1;
+  position: absolute;
+  width: 850px;
+  height: 400px;
+  display: none;
+  border-radius: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 35px;
+  margin-left: -500px;
+}
+
+.main-head .sec1 .sp3 .btn2:focus + .login-div {
+  display: block;
 }
 
 .main-head .sec1 .search {
@@ -186,7 +309,28 @@
   margin-top: 10px !important;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
+  .sec1 {
+    max-width: 900px !important;
+  }
+  .sec1 .f1, .sec1 .f2, .sec1 .f3 {
+    max-width: 300px !important;
+  }
+  .sec1 .sp1 {
+    max-width: 250px !important;
+  }
+  .sec1 .sp2 {
+    max-width: 200px;
+  }
+  .sec1 .sp3 {
+    max-width: 350px !important;
+  }
+  .search {
+    padding: 0% 10%;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
   .main-head .sec1 {
     max-width: 650px;
     display: -webkit-box;
@@ -201,7 +345,7 @@
             justify-content: center;
   }
   .main-head .sec1 .f1, .main-head .sec1 .f2, .main-head .sec1 .f3-hide {
-    display: none;
+    display: none !important;
   }
   .main-head .sec1 .f3 {
     text-align: left !important;
@@ -248,15 +392,13 @@
     background-color: black;
     border-radius: 10px;
     position: absolute;
+    width: 500px;
     top: 50px;
     text-align: left;
     padding: 20px;
     z-index: 2;
-    width: 500px;
-    height: 140px;
+    height: 0px;
     opacity: 0.8;
-    -webkit-transition: all 3s;
-    transition: all 3s;
   }
   .main-head .sec1 .ham-class hr {
     color: lightgray;
@@ -269,6 +411,16 @@
   .main-head .sec1 .ham-class .btn1 {
     display: none;
   }
+  .main-head .sec1 .select-city {
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+  }
+  .main-head .sec1 .select-city .bgred {
+    padding: 10px;
+  }
   .main-head .sec1 .search {
     margin-top: 15px;
     -webkit-box-ordinal-group: 7;
@@ -277,9 +429,15 @@
   }
   .main-head .sec1 .show {
     display: block;
+    height: 140px;
+    -webkit-transition: height 5s;
+    transition: height 5s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
   }
   .main-head .sec1 .hide {
     display: none;
+    height: 0px;
   }
 }
 
@@ -312,6 +470,10 @@
     font-weight: bold;
     font-size: 16px;
     color: white;
+  }
+  .sec1 .select-city {
+    width: 300px !important;
+    margin-left: -50px;
   }
   .sec1 .search {
     -webkit-box-ordinal-group: 7;

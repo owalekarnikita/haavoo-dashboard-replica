@@ -33,15 +33,29 @@ const Main = () => {
       setIsClicked(false)
     }
   }
+
+  const [isSorted, setIsSorted] = useState(false);
+  const sortHandler = () => {
+    if(isSorted=== false)
+    {
+      setIsSorted(true);
+    }
+    else {
+      setIsSorted(false);
+    }
+  }
+
   return (
     <main className='main-div'>
       <div className='sort-div'>
-      <div className='filter'>
-          <span className='filter-btn hide' onClick={filterHandler}> Filter</span>
-        </div>
-        <div className='sort'>
-          <span className='sort-icon'><BiSortAlt2 /> </span>Sort <span className='sort-icon'> <AiOutlineCaretDown /></span>
-          <span className='sort-dropdown'> Relevance <br/> popularity</span>
+        <div className='sort-center'>
+            <div className='filter'>
+              <span className='filter-btn hide' onClick={filterHandler}> Filter</span>
+            </div>
+            <div className='sort' onClick={sortHandler}>
+              <span className='sort-icon1' ><BiSortAlt2 /> </span><b> Sort By </b><span className='sort-icon'> <AiOutlineCaretDown /></span>
+              <span className={isSorted ?'sort-dropdown sort-show' : 'sort-dropdown sort-hide'}><ul> <li> Relevance</li> <li> Popularity </li></ul></span>
+            </div>
         </div>
       </div>
       <div>

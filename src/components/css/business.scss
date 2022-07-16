@@ -51,12 +51,12 @@
 {
     .container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
         .img {
-            width: 100%;
+            width: 100% !important;
         }
         .imgdata {
-            width: 100%;
+            width: 100% !important;
         }
     }
 }

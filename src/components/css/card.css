@@ -31,7 +31,8 @@
 }
 
 .card .card-below .icon-dwn {
-  margin-top: 5px;
+  margin-top: 10px;
+  padding-right: 10px;
 }
 
 .card .card-below .hide {

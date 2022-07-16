@@ -16,15 +16,15 @@ $red :#e51c1c;
             font-size: 15px;
             max-width: 1050px;
             .f1 {
-                width: 300px;
+                width: 350px;
                 font-size: 13px;
 
             }
             .f2 {
-                width: 300px;
+                width: 350px;
             }
             .f3 {
-                width: 300px;
+                width: 350px;
                 text-align: right;
                 .icon {
                     margin-top: 40px;
@@ -48,35 +48,11 @@ $red :#e51c1c;
                     }
                 }
             }
-            .login-div {
-                z-index: 1;
-                position: absolute;
-                width: 850px;
-                height: 400px;
-                display: none;
-                border-radius: 10px;
-                justify-content: center;
-                top: 35px;
-                padding-left: 200px;
-                
-            }
-            .login-div:hover {
-                display: none;
-            }
-            .show-login {
-                display: block;
-            }
-            .hide-login {
-                display: none;
-            }
-            .ham-class {
-                display: none;
-            }
             .sp1{
-                width: 300px;
+                width: 400px;
             }
             .sp2 {
-                width: 250px;
+                width: 300px;
                 text-align: right;
                 padding-top: 16px;
                 a {
@@ -88,7 +64,7 @@ $red :#e51c1c;
             }
             .sp3 {
                 margin-top: 10px;
-                max-width: 350px;
+                max-width: 400px;
                 text-align: right;
                 .btn1 {
                     background-color: rgb(255, 157, 0);
@@ -110,6 +86,128 @@ $red :#e51c1c;
                     cursor: pointer;
                 }
                 
+            }
+            .ham-class{
+                display: none;
+            }
+
+            .select-city {
+                padding: 20px;
+                width: 800px;
+                border-radius: 10px;
+                color: black;
+                text-align: center;
+                background-color: white;
+                position: absolute;
+                z-index: 1;
+                margin-left: 100px;
+                margin-top: 10px;
+                
+                h2 {
+                    font-size: 16px;
+                }
+                .close-icon {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                }
+                .search-icon {
+                    position: absolute;
+                    z-index: 2;
+                    margin-top: 12px;
+                    margin-left: 10px;
+                    color: gray;
+                    font-size: 22px;
+                }
+                .search-input {
+                    position: relative;
+                    padding: 15px;
+                    padding-left: 35px;
+                    width: 90%;
+                    border-radius: 10px;
+                    font-size: 15px;
+                    border: 0.5px solid gray;
+                }
+                .bgred {
+                    background-color: #e51c1c;
+                    padding: 0px 40px 0px 40px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    .bgflex {
+                        width: 100px;
+                        padding: 20px 10px 10px 10px;
+                        .done {
+                            padding: 1px 3px;
+                            background-color: rgb(255, 157, 0);
+                            border-radius: 50%;
+                            position: absolute;
+                            z-index: 3;
+                            top: 172px;
+                            margin-left: 80px;
+                        }
+                        .city-icon {
+                            padding: 5px 10px;
+                            border-radius: 50%;
+                            font-size: 36px;
+                            border: 1px solid rgb(68, 67, 67);
+                            color: rgb(68, 67, 67);
+                        }
+                        .city-name {
+                            font-size: small;
+                            color: white;
+                            line-height: normal !important;
+                            padding-top: 5px;
+                        }
+                        .show-done {
+                            display: block;
+                        }
+                        .hide-done {
+                            display: none;
+                        }
+                    }
+                    .bgflex:hover {
+                        opacity: 0.8;
+                    }
+                    .bgflex:nth-child(2n)
+                    {
+                        background-color: #c96a6a;
+                    }
+                }
+                .cities {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    span {
+                        width: 25%;
+                        text-align: left;
+                    }
+                }
+            }
+            .city-show {
+                display: block;
+            }
+            .city-hide {
+                display: none;
+            }
+
+            .login-div {
+                z-index: 1;
+                position: absolute;
+                width: 850px;
+                height: 400px;
+                display: none;
+                border-radius: 10px;
+                justify-content: center;
+                top: 35px;
+                margin-left: -500px;
+                
+            }
+            .sp3 .btn2:focus + .login-div {
+                display: block;
             }
             .search{
                 display: flex;
@@ -152,12 +250,33 @@ $red :#e51c1c;
         }
     }
 
-@media only screen and (max-width : 1000px) {
+@media only screen and (max-width : 1200px) {
+    .sec1 {
+        max-width: 900px !important;
+        .f1, .f2, .f3 {
+            max-width: 300px !important;
+        }
+        .sp1{
+            max-width: 250px !important;
+        }
+        .sp2 {
+            max-width: 200px;
+        }
+        .sp3 {
+            max-width: 350px !important;
+        }
+    }
+    .search {
+        padding: 0% 10%;
+    }
+}
+
+@media only screen and (max-width : 1050px) {
     .main-head {
         .sec1 {
             max-width: 650px;
             .f1, .f2, .f3-hide {
-                display: none;
+                display: none !important;
             }
             .f3 {
                 text-align: left !important;
@@ -200,16 +319,15 @@ $red :#e51c1c;
                 background-color: black;
                 border-radius: 10px;
                 position: absolute;
+                width: 500px;
                 top : 50px;
                 text-align: left;
                 padding: 20px;
                 z-index: 2;
-                width: 500px;
-                height: 140px;
+                height: 0px;
                 opacity: 0.8;
-                transition : all 3s;
-                // -webkit-transition : all 3s;
-                // -moz-transition : all 3s;
+                // -webkit-transition : width 3s;
+                // -moz-transition : width 3s;
                 hr {
                     color: lightgray;
                 }
@@ -223,6 +341,18 @@ $red :#e51c1c;
                     
                 }
             }
+
+            .select-city {
+                padding: 20px;
+                width: 400px;
+                border-radius: 10px;
+                color: black;
+                text-align: center;
+                .bgred {
+                    padding: 10px;
+                }
+            }
+   
             .search {
                 margin-top: 15px;
                 order: 6;
@@ -230,9 +360,13 @@ $red :#e51c1c;
             }
             .show {
                 display: block;
+                height: 140px;
+                transition : height 5s;
+                animation-delay: 1s;
             }
             .hide {
                 display: none;
+                height: 0px;
             }
         }
     }
@@ -269,6 +403,10 @@ $red :#e51c1c;
                 font-size: 16px;
                 color: white;
             }
+        }
+        .select-city {
+            width: 300px !important;
+            margin-left: -50px;
         }
        .search{
             order: 6;
