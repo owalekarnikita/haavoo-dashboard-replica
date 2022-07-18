@@ -46,8 +46,9 @@
 }
 
 .main-div .sort-div .sort .sort-dropdown {
+  border: 1px solid lightgray;
   background-color: white;
-  padding: 10px;
+  border-radius: 0.25em;
   color: black;
   position: absolute;
   z-index: 2;
@@ -55,10 +56,17 @@
   top: 270px;
   text-align: center;
   width: 150px;
+  padding: 10px 0px;
 }
 
 .main-div .sort-div .sort .sort-dropdown ul {
   list-style: none;
+  margin: 0px;
+}
+
+.main-div .sort-div .sort .sort-dropdown ul li {
+  padding: 5px;
+  margin-left: -40px;
 }
 
 .main-div .sort-div .sort .sort-dropdown ul li:hover {
@@ -222,7 +230,18 @@
   background-color: #ff9d00;
 }
 
+@media only screen and (max-width: 1600px) {
+  .sort-dropdown {
+    right: 120px !important;
+    top: 300px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
+  .sort-dropdown {
+    right: 100px !important;
+    top: 300px;
+  }
   .main-sec .card1 {
     max-width: 250px !important;
   }
@@ -264,6 +283,10 @@
   .main-div .sort-div .sort-center .sort {
     max-width: 550px;
     text-align: right;
+  }
+  .main-div .sort-div .sort-center .sort-dropdown {
+    right: 130px !important;
+    top: 330px;
   }
   .main-div .show {
     width: 300px;

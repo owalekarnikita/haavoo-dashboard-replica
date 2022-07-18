@@ -30,18 +30,26 @@
                 cursor: pointer;
             }
             .sort-dropdown {
-                background-color: white;
-                padding: 10px; 
-                color: black; 
-                position: absolute;
-                z-index: 2;
-                right: 500px;
-                top: 270px;
-                text-align: center;
-                width: 150px;
+                    border: 1px solid lightgray;
+                    background-color: white;
+                    border-radius: 0.25em;
+                    color: black; 
+                    position: absolute;
+                    z-index: 2;
+                    right: 500px;
+                    top: 270px;
+                    text-align: center;
+                    width: 150px;
+                    padding: 10px 0px;
                 ul {
                     list-style: none;
-                    li:hover {
+                    margin: 0px;
+                    li {
+                        padding: 5px; 
+                        margin-left: -40px;
+                        
+                    }
+                    li:hover {    
                         background-color: rgb(255, 157, 0);
                     }
                 } 
@@ -175,9 +183,20 @@
     }
       
 }
+@media only screen and (max-width : 1600px)
+{
+    .sort-dropdown {
+        right: 120px !important;
+        top: 300px;
+    }
+}
 
 @media only screen and (max-width : 1200px)
 {
+    .sort-dropdown {
+        right: 100px !important;
+        top: 300px;
+    }
     .main-sec{
         .card1 {
             max-width: 250px !important;
@@ -212,6 +231,10 @@
                 .sort {
                     max-width: 550px ;
                     text-align: right;
+                }
+                .sort-dropdown {
+                    right: 130px !important;
+                    top: 330px;
                 }
             }
         }
