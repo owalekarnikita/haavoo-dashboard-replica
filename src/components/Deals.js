@@ -2,7 +2,7 @@ import React from 'react';
 
 const Deals = () => {
   return (
-    <div style={{ padding: '10px', display: 'flex', justifyContent: 'center', color: 'gray'}}>
+    <div className='container text-secondary text-center p-5'>
         <span>Sorry, no result found. </span>
     </div>
   )

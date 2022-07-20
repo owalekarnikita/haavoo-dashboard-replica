@@ -1,117 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet');
-.main-head {
-  padding: 20px 10px;
-  padding-bottom: 20px;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.main-head .btn-danger {
+  background-color: #e51c1c !important;
 }
 
-.main-head .sec1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  font-size: 15px;
-  max-width: 1050px;
+.main-head .bg-danger {
+  background-color: #e51c1c !important;
 }
 
-.main-head .sec1 .f1 {
-  width: 350px;
-  font-size: 13px;
-}
-
-.main-head .sec1 .f2 {
-  width: 350px;
-}
-
-.main-head .sec1 .f3 {
-  width: 350px;
-  text-align: right;
-}
-
-.main-head .sec1 .f3 .icon {
-  margin-top: 40px;
-}
-
-.main-head .sec1 .f3 .top-select {
-  border: 1px solid silver;
-  padding: 3px 8px;
-  border-radius: 20px;
-}
-
-.main-head .sec1 .f3 select {
-  padding: 3px 10px;
-  border-radius: 20px;
-  cursor: pointer;
-  background: transparent;
-  color: white;
-}
-
-.main-head .sec1 .f3 .visible .hamburger {
+.main-head .hamburger {
   display: none;
 }
 
-.main-head .sec1 .sp1 {
-  width: 400px;
+.main-head .ham-class {
+  display: none;
+  position: absolute;
 }
 
-.main-head .sec1 .sp2 {
-  width: 300px;
-  text-align: right;
-  padding-top: 16px;
+.main-head .city-show {
+  display: block;
 }
 
-.main-head .sec1 .sp2 a {
-  padding: 5px 10px;
-  text-decoration: none;
-  color: white;
-}
-
-.main-head .sec1 .sp3 {
-  margin-top: 10px;
-  max-width: 400px;
-  text-align: right;
-}
-
-.main-head .sec1 .sp3 .btn1 {
-  background-color: #ff9d00;
-  border-radius: 20px;
-  border: 1px solid black;
-  padding: 10px;
-  font-weight: bold;
-  font-size: 16px;
-  color: white;
-}
-
-.main-head .sec1 .sp3 .btn2 {
-  background-color: #e51c1c;
-  border-radius: 20px;
-  border: 1px solid black;
-  padding: 10px;
-  font-weight: bold;
-  font-size: 16px;
-  color: white;
-  cursor: pointer;
-}
-
-.main-head .sec1 .ham-class {
+.main-head .city-hide {
   display: none;
 }
 
-.main-head .sec1 .select-city {
+.main-head .select-city {
   padding: 20px;
   width: 800px;
   border-radius: 10px;
@@ -124,26 +37,22 @@
   margin-top: 10px;
 }
 
-.main-head .sec1 .select-city h2 {
-  font-size: 16px;
-}
-
-.main-head .sec1 .select-city .close-icon {
+.main-head .select-city .close-icon {
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
-.main-head .sec1 .select-city .search-icon {
+.main-head .select-city .search-icon {
   position: absolute;
   z-index: 2;
-  margin-top: 12px;
+  margin-top: 10px;
   margin-left: 10px;
   color: gray;
   font-size: 22px;
 }
 
-.main-head .sec1 .select-city .search-input {
+.main-head .select-city .search-input {
   position: relative;
   padding: 15px;
   padding-left: 35px;
@@ -153,7 +62,7 @@
   border: 0.5px solid gray;
 }
 
-.main-head .sec1 .select-city .bgred {
+.main-head .select-city .bgred {
   background-color: #e51c1c;
   padding: 0px 40px 0px 40px;
   border-radius: 10px;
@@ -167,22 +76,22 @@
       flex-wrap: wrap;
 }
 
-.main-head .sec1 .select-city .bgred .bgflex {
+.main-head .select-city .bgred .bgflex {
   width: 100px;
   padding: 20px 10px 10px 10px;
 }
 
-.main-head .sec1 .select-city .bgred .bgflex .done {
+.main-head .select-city .bgred .bgflex .done {
   padding: 1px 3px;
   background-color: #ff9d00;
   border-radius: 50%;
   position: absolute;
   z-index: 3;
-  top: 172px;
-  margin-left: 80px;
+  top: 162px;
+  margin-left: 67px;
 }
 
-.main-head .sec1 .select-city .bgred .bgflex .city-icon {
+.main-head .select-city .bgred .bgflex .city-icon {
   padding: 5px 10px;
   border-radius: 50%;
   font-size: 36px;
@@ -190,30 +99,30 @@
   color: #444343;
 }
 
-.main-head .sec1 .select-city .bgred .bgflex .city-name {
+.main-head .select-city .bgred .bgflex .city-name {
   font-size: small;
   color: white;
   line-height: normal !important;
   padding-top: 5px;
 }
 
-.main-head .sec1 .select-city .bgred .bgflex .show-done {
+.main-head .select-city .bgred .bgflex .show-done {
   display: block;
 }
 
-.main-head .sec1 .select-city .bgred .bgflex .hide-done {
+.main-head .select-city .bgred .bgflex .hide-done {
   display: none;
 }
 
-.main-head .sec1 .select-city .bgred .bgflex:hover {
+.main-head .select-city .bgred .bgflex:hover {
   opacity: 0.8;
 }
 
-.main-head .sec1 .select-city .bgred .bgflex:nth-child(2n) {
+.main-head .select-city .bgred .bgflex:nth-child(2n) {
   background-color: #c96a6a;
 }
 
-.main-head .sec1 .select-city .cities {
+.main-head .select-city .cities {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,25 +138,17 @@
   font-size: 14px;
 }
 
-.main-head .sec1 .select-city .cities span {
+.main-head .select-city .cities span {
   width: 25%;
   text-align: left;
 }
 
-.main-head .sec1 .city-show {
-  display: block;
-}
-
-.main-head .sec1 .city-hide {
-  display: none;
-}
-
-.main-head .sec1 .login-div {
+.main-head .login-div {
   z-index: 1;
   position: absolute;
   width: 850px;
   height: 400px;
-  display: none;
+  display: none !important;
   border-radius: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -256,45 +157,11 @@
   margin-left: -500px;
 }
 
-.main-head .sec1 .sp3 .btn2:focus + .login-div {
-  display: block;
+.main-head .loginbtn:focus + .login-div {
+  display: block !important;
 }
 
-.main-head .sec1 .search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1em;
-  width: 100%;
-}
-
-.main-head .sec1 .search select {
-  padding: 15px;
-  border-radius: 15px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  font-size: large;
-  color: #282c33;
-}
-
-.main-head .sec1 .search .searchbtn {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-}
-
-.main-head .sec1 .search .searchbtn input {
-  font-size: large;
-  width: 100%;
-  border-radius: 15px;
-  padding: 15px;
-  position: relative;
-  color: #495057;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.main-head .sec1 .search .searchbtn button {
+.main-head .search-btn {
   position: absolute;
   margin: -50px;
   margin-top: 1px;
@@ -305,163 +172,24 @@
   color: white;
 }
 
-.main-head .sec1 .search .searchbtn button .dwn {
-  margin-top: 10px !important;
-}
-
 @media only screen and (max-width: 1200px) {
-  .sec1 {
-    max-width: 900px !important;
+  .main-head {
+    width: 900px;
   }
-  .sec1 .f1, .sec1 .f2, .sec1 .f3 {
-    max-width: 300px !important;
-  }
-  .sec1 .sp1 {
-    max-width: 250px !important;
-  }
-  .sec1 .sp2 {
-    max-width: 200px;
-  }
-  .sec1 .sp3 {
-    max-width: 350px !important;
-  }
-  .search {
-    padding: 0% 10%;
-  }
-}
-
-@media only screen and (max-width: 1050px) {
-  .main-head .sec1 {
-    max-width: 650px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .main-head .sec1 .f1, .main-head .sec1 .f2, .main-head .sec1 .f3-hide {
-    display: none !important;
-  }
-  .main-head .sec1 .f3 {
-    text-align: left !important;
-    max-width: 300px !important;
-  }
-  .main-head .sec1 .f3 .visible {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 16px;
-  }
-  .main-head .sec1 .f3 .visible .hamburger {
-    display: block;
-    padding: 5px;
-  }
-  .main-head .sec1 .f3 .visible .top-select {
-    padding: 3px 10px 0px 10px !important;
-    margin: 10px;
-    font-size: 14px;
-    border: 1px solid white;
-  }
-  .main-head .sec1 .sp2 {
-    display: none;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .main-head .sec1 .sp3 {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    text-align: right;
-    max-width: 350px;
-  }
-  .main-head .sec1 .sp1 {
-    padding-top: 10px;
-    padding-bottom: 30px;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-    text-align: center;
-  }
-  .main-head .sec1 .ham-class {
-    background-color: black;
-    border-radius: 10px;
-    position: absolute;
-    width: 500px;
-    top: 50px;
-    text-align: left;
-    padding: 20px;
-    z-index: 2;
-    height: 0px;
-    opacity: 0.8;
-  }
-  .main-head .sec1 .ham-class hr {
-    color: lightgray;
-  }
-  .main-head .sec1 .ham-class a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-  }
-  .main-head .sec1 .ham-class .btn1 {
-    display: none;
-  }
-  .main-head .sec1 .select-city {
-    padding: 20px;
-    width: 400px;
-    border-radius: 10px;
-    color: black;
-    text-align: center;
-  }
-  .main-head .sec1 .select-city .bgred {
-    padding: 10px;
-  }
-  .main-head .sec1 .search {
-    margin-top: 15px;
-    -webkit-box-ordinal-group: 7;
-        -ms-flex-order: 6;
-            order: 6;
-  }
-  .main-head .sec1 .show {
-    display: block;
-    height: 140px;
-    -webkit-transition: height 5s;
-    transition: height 5s;
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s;
-  }
-  .main-head .sec1 .hide {
-    display: none;
-    height: 0px;
+  .select-city {
+    width: 600px !important;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .sp3 {
-    text-align: left;
+  .main-head {
+    max-width: 600px;
   }
-  .sp3 .btn1 {
-    display: none;
-  }
-  .sec1 {
-    display: inline;
-  }
-  .sec1 .f3 {
-    max-width: 150px !important;
-  }
-  .sec1 .sp3 {
-    max-width: 150px;
-  }
-  .sec1 .ham-class {
+  .ham-class {
     top: 70px !important;
     width: 300px;
   }
-  .sec1 .ham-class .btn1 {
+  .ham-class .btn1 {
     display: block !important;
     background-color: #ffa200;
     border-radius: 20px;
@@ -471,11 +199,11 @@
     font-size: 16px;
     color: white;
   }
-  .sec1 .select-city {
+  .select-city {
     width: 300px !important;
     margin-left: -50px;
   }
-  .sec1 .search {
+  .head3 {
     -webkit-box-ordinal-group: 7;
         -ms-flex-order: 6;
             order: 6;
@@ -488,6 +216,7 @@
 @media only screen and (max-width: 500px) {
   .main-head {
     padding: 10px !important;
+    max-width: 500px;
   }
   .search {
     -webkit-box-orient: vertical;

@@ -49,21 +49,21 @@ const Business = () => {
     }
    ];
   return (
-        <div className='business'>
+        <div className=''>
       { array.map((details,index) => {
         return (
-          <div className='container'>
-          <section className='img'>
-          <img src={details.img} width='100%'/>
-      </section>
-      <section className='imgdata'>
-          <h1> {details.name} </h1>
-          <span className='second'><b> Category : </b> {details.cat} </span><br/>
-          <span className='third'><b> Area : </b> {details.area} </span><br/>
-          <span className='forth'> <p> {details.details}</p> </span>
-          <button className='btndata'> Show The Contact Details </button>
-      </section>
-      </div>
+          <div className='d-md-flex sm-row border rounded2 p-3 gap-2 mt-3' key={index}>
+              <div className='col-md-6 col-sm-12 p-2'>
+              <img src={details.img} width='100%' className='rounded2'/>
+          </div>
+          <div className='col-md-6 col-sm-12 p-2 lh-lg'>
+              <h1 className='fs-5 fw-bold'> {details.name} </h1>
+              <span className='fs-6'><b> Category : </b> <span className='text-secondary'>{details.cat} </span> </span><br/>
+              <span className='fs-6'><b> Area : </b> <span className='text-secondary'> {details.area} </span> </span><br/>
+              <span className='fs-7 text-secondary lh-base'> <p> {details.details}</p> </span>
+              <button className='btn-danger btn rounded-pill'> Show The Contact Details </button>
+          </div>
+          </div>
         );
       }) }
       </div>

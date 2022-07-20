@@ -10,6 +10,7 @@ const Home = () => {
         <Header />
         <Main />
         <Footer />
+    
     </div>
   )
 }

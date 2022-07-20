@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com');
 
+@import 'bootstrap/dist/css/bootstrap.min.css';
 
 .main {
         background-image: url('../public/images/bg1.png');
@@ -10,3 +11,36 @@
         line-height: 1.5;
 }
 
+.rounded {
+        border-radius: 0.75rem !important;
+}
+.rounded2 {
+        border-radius: 0.50rem !important;
+}
+.rounded-end {
+        border-top-right-radius: 0.75rem !important;
+        border-bottom-right-radius: 0.75rem !important;
+}
+.rounded-start {
+        border-top-left-radius: 0.75rem !important;
+        border-bottom-left-radius: 0.75rem !important;
+}
+.rounded-top {
+        border-top-left-radius: 0.50rem !important;
+        border-top-right-radius: 0.50rem !important;
+}
+.bg-secondary {
+       background-color: rgb(237, 231, 231) !important;
+}
+.bg-danger,.btn-danger {
+        background-color: #e51c1c !important;
+}
+.fs-7 {
+        font-size: 15px;
+}
+.word {
+        word-spacing: 20px;           
+}
+.word-spacing {
+        word-spacing: 2px;
+}

@@ -1,70 +1,7 @@
 .main-div {
     background-color: white;
-       
-    .sort-div {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-        padding: 15px;
-        font-size: 16px;
-        box-shadow: 5px 5px 10px rgb(231, 228, 228);
-        background-color: white;
-        text-align: right;
-        
-        .filter {
-            max-width: 400px;
-            display: none !important;
-            border : none;
-            box-shadow:none;
-            background-color: white;
-            text-align: left;
-        }
-        .sort {
-            width: 900px;
-            .sort-icon1 {   
-                cursor: pointer;
-                font-size: larger;
-            }
-            .sort-icon {   
-                cursor: pointer;
-            }
-            .sort-dropdown {
-                    border: 1px solid lightgray;
-                    background-color: white;
-                    border-radius: 0.25em;
-                    color: black; 
-                    position: absolute;
-                    z-index: 2;
-                    right: 500px;
-                    top: 270px;
-                    text-align: center;
-                    width: 150px;
-                    padding: 10px 0px;
-                ul {
-                    list-style: none;
-                    margin: 0px;
-                    li {
-                        padding: 5px; 
-                        margin-left: -40px;
-                        
-                    }
-                    li:hover {    
-                        background-color: rgb(255, 157, 0);
-                    }
-                } 
-            }
-            .sort-show {
-                display: block;
-            }
-            .sort-hide {
-                display: none;
-            }
-            .b {
-                margin-top: -5px;
-            }
-        }
-        
+    .active {
+        background-color: rgb(255, 157, 0);
     }
     .sidenav {
         height: 100%;
@@ -84,7 +21,7 @@
             padding: 5px 20px;
             .name {
                 flex: 1;
-                color: rgb(193, 3, 3);
+                color: #e51c1c;
 
             }
             .closebtn {    
@@ -94,180 +31,21 @@
                font-size: larger
             }
         }
-        .card1 {
-            padding: 20px;
-            .card-first,.card-third {
-                background-color: rgb(246, 242, 242);
-                border-radius: 10px;
-                border: 1px solid rgb(202, 192, 192);
-                .card-title{
-                    font-size: large;
-                    padding-left: 10px !important;
-                    margin: 10px;
-                }
-                .card-below2 {
-                    padding-left: 10px;
-                    background-color: white;
-                    border-top: 1px solid rgb(202, 192, 192);
-                    border-radius: 0px 0px 10px 10px;
-                }
-            }
-        }
-      }
-
-    .main-sec{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;    
-        gap: 1.5em;
         
-        .card1{
-            width: 280px; 
-            .card-first {
-                background-color: rgb(246, 242, 242);
-                border-radius: 10px;
-                border: 1px solid rgb(202, 192, 192);
-                box-sizing: border-box;
-                .card-title{
-                    font-size: large;
-                    padding-left: 10px;
-                    margin: 10px;
-                }
-                .card-below2 {
-                    background-color: white;
-                    border-top: 1px solid rgb(202, 192, 192);
-                    border-radius: 0px 0px 10px 10px;
-                    padding:10px;
-                    line-height: 2em;
-                    color: rgb(111, 107, 107);
-                    .dwn {
-                        margin-top: 0px;
-                        background-color: white;
-                        border: 0px;
-                        float: right;
-                    }
-                }
-            }
-        }
-        .aside {
-            width: 750px;
-            a {
-                text-decoration: none;
-                color: black;
-                font-weight: bold;
-                font-size: 24px;    
-            }
-            .body-navbar{
-                display: flex !important;
-                text-align: center;
-                width: 100% !important;
-                    .a1 {
-                        border-radius: 10px 0px 0px 10px;
-                        border: 1px solid lightgray;
-                        padding: 15px;
-                        width: 50%;
-                        
-                        
-                    }
-                    .a2 {
-                        border-radius: 0px 10px 10px 0px;
-                        border: 1px solid lightgray;
-                        padding: 15px;
-                        width: 50%;
-                    }
-                    .active {
-                        background-color: rgb(255, 157, 0);
-                    }
-            }
-        }
+      }
     }
-      
-}
-@media only screen and (max-width : 1600px)
-{
-    .sort-dropdown {
-        right: 120px !important;
-        top: 300px;
-    }
-}
-
-@media only screen and (max-width : 1200px)
-{
-    .sort-dropdown {
-        right: 100px !important;
-        top: 300px;
-    }
-    .main-sec{
-        .card1 {
-            max-width: 250px !important;
-        }
-        .aside {
-            max-width : 650px !important;
-        }
-    }
-
-}
+    
 
 
 @media only screen and (max-width : 1000px)
 {
     .main-div{
-        
-        .sort-div {
-                display: flex;
-                justify-content: center;
-            .sort-center{
-                display: flex;
-                justify-content: space-between !important;
-                flex-direction: row;
-                .filter {
-                    display: block !important;  
-                    max-width: 550px;
-                    border : none;
-                    box-shadow:none;
-                    background-color: white;
-                    text-align: left;         
-                }
-                .sort {
-                    max-width: 550px ;
-                    text-align: right;
-                }
-                .sort-dropdown {
-                    right: 130px !important;
-                    top: 330px;
-                }
-            }
-        }
-
         .show {
             width: 300px;
+            transition: width 0.5s;
         }
         .hide {
             width: 0px;
         }
-        .main-sec {
-            padding-left: 10%;
-            padding-right: 10%;
-            .card1 {
-                display: none;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width : 600px){
-    .sort-center{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around !important;
-        filter {
-            max-width: 200px !important; 
-        }
-        .sort {
-            max-width: 200px !important;
-        }
-    }
-    .show {
-        width: 250px !important;
     }
 }

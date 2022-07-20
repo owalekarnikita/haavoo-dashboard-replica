@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 import './css/main.css';
 import { BiSortAlt2 } from "react-icons/bi";
@@ -6,8 +7,9 @@ import Business from './Business';
 import Deals from './Deals';
 import { NavLink } from 'react-router-dom';
 import { Routes,Route } from 'react-router-dom';
-import { AiOutlineCaretDown,AiOutlineClose } from "react-icons/ai";
-
+import { AiOutlineClose} from "react-icons/ai";
+import Dropdown from 'react-bootstrap/Dropdown';
+// AiOutlineCaretDown 
 const Main = () => {
 
   const [isClicked, setIsClicked] = useState(false);
@@ -34,81 +36,63 @@ const Main = () => {
     }
   }
 
-  const [isSorted, setIsSorted] = useState(false);
-  const sortHandler = () => {
-    if(isSorted=== false)
-    {
-      setIsSorted(true);
-    }
-    else {
-      setIsSorted(false);
-    }
-  }
 
   return (
     <main className='main-div'>
-      <div className='sort-div'>
-        <div className='sort-center'>
-            <div className='filter'>
-              <span className='filter-btn hide' onClick={filterHandler}> Filter</span>
+      <div className='shadow'>
+        <div className='container'>
+          <div className='d-flex justify-content-between pt-2 pb-2'>
+            <div className=''>
+              <span className='filter-btn d-lg-none d-sm-block fw-bold fs-6' onClick={filterHandler}> Filter</span>
             </div>
-            <div className='sort' onClick={sortHandler}>
-              <span className='sort-icon1' ><BiSortAlt2 /> </span><b> Sort By </b><span className='sort-icon'> <AiOutlineCaretDown /></span>
-              <span className={isSorted ?'sort-dropdown sort-show' : 'sort-dropdown sort-hide'}><ul> <li> Relevance</li> <li> Popularity </li></ul></span>
+            <div className=''>
+             <Dropdown>
+                <Dropdown.Toggle variant="" id="dropdown-basic" className='fw-bold fs-6'>
+                <BiSortAlt2 /> Sort By 
+                </Dropdown.Toggle>
+                <Dropdown.Menu className=''>
+                  <Dropdown.Item href="#/action-1" className=''> Relevance</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2"> Popularity</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </div>
             </div>
         </div>
       </div>
       <div>
         <br/>
         <br/>
-      <div className={isClicked ?'sidenav show' : 'sidenav hide'}>
-        <div className='filt'>
-          <span className='name'> Filter </span>
-          <span className='closebtn' onClick={closeHandler}> <AiOutlineClose /></span>
+      <div className={isClicked ?' show h-100 position-fixed top-0 bg-white p-2 pt-3 overflow-auto' : 'sidenav hide'}>
+        <div className='d-flex justify-content-between ps-3 pe-3 pt-0 mt-0 pb-3'>
+          <span className='text-danger'> Filter </span>
+          <span className='' onClick={closeHandler}> <AiOutlineClose /></span>
         </div>
         <div className='card1'>
-            <div class="card-first">
-              <h4 className='card-title'><b>Type Business</b></h4>
-              <div className='card-below2'> 
-                <span> <input type='checkbox'/> Individual </span><br></br>
-                <span> <input type='checkbox'/> Shop/Office </span>
-              </div>
-            </div>
-            <br/>
-            <Card />
-            <br/>
-  
+            <Card />  
         </div>
       </div>
-
-      <section className='main-sec'>
-        <div className='card1'>
-          <div class="card-first">
-            <h4 className='card-title'><b>Type Business</b></h4>
-            <div className='card-below2'> 
-              <span> <input type='checkbox'/> Individual </span><br></br>
-              <span> <input type='checkbox'/> Shop/Office </span>
-            </div>
+              {/* Main section */}
+      <div className='main-sec container'>
+        <div className='d-flex justify-content-between gap-4'>
+          <div className='col-lg-3 col-sm-0 d-lg-block d-sm-none'>
+            <Card />
           </div>
-          <br/>
-          <Card />
-        </div>
 
-        <div className='aside'>
-            <div className='body-navbar'> 
-              <NavLink to='/components/business' className='a1'> Businesses </NavLink> 
-              <NavLink to='/components/deals' className='a2'> Deals </NavLink>
-            </div>
-            <br/><br/>
-            <div className='body-data'>
-              <Routes>
-                <Route path='/components/business' element={<Business/>} />
-                <Route path='/components/deals' element={<Deals />} />
-              </Routes>
-            </div>
-
+          <div className='col-lg-9 col-sm-12'>
+              <div className='body-navbar d-flex justify-content-between flex-fill'> 
+                <NavLink to='/components/business' className='col-6 text-center border p-3 rounded-start text-decoration-none text-black fw-bold fs-4'> Businesses </NavLink> 
+                <NavLink to='/components/deals' className='col-6 text-center border p-3 rounded-end text-decoration-none text-black fw-bold fs-4'> Deals </NavLink>
+              </div>
+              <br/>
+              <div className='body-data'>
+                <Routes>
+                  <Route path='/components/business' element={<Business/>} />
+                  <Route path='/components/deals' element={<Deals />} />
+                </Routes>
+              </div>
+          </div>
         </div>
-      </section>
+      </div>
       
 
       <br/>

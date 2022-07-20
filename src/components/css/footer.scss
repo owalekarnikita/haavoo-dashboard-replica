@@ -1,137 +1,134 @@
 
-$red : #e51c1c;
-$pzero : 0%;
+// $red : #e51c1c;
+// $pzero : 0%;
 
-.foot-div {
+// .foot-div {
     
-    color: white;
-    padding-bottom: $pzero;
-    font-size: 15px;
-    line-height: 1.5em;
-    word-spacing: 3px;
+//     color: white;
+//     padding-bottom: $pzero;
+//     font-size: 15px;
+//     line-height: 1.5em;
+//     word-spacing: 3px;
+//     width: 1100px !important;
 
-    .main-foot {
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-        column-gap: 1em;
-        line-height: 2;
-        a {
-            padding: 5px 10px;
-            padding-left: $pzero;
-            text-decoration: none;
-            color: white;  
-            font-size: 14px; 
-        }
-        b {
-            padding: 20px;
-            padding-left: 0px;
-            margin-bottom: 2em;
-            font-size: large;
-        }
-        .foot1 {
-            width: 370px;
-            justify-content: left;
-            .font {
-                font-size: 36px;
-            }
-            span {
-                text-align: left;
-            }
+//     .main-foot {
+//         padding: 10px;
+//         column-gap: 1em;
+//         line-height: 2;
+//         a {
+//             padding: 5px 10px;
+//             padding-left: $pzero;
+//             text-decoration: none;
+//             color: white;  
+//             font-size: 14px; 
+//         }
+//         b {
+//             padding: 20px;
+//             padding-left: 0px;
+//             margin-bottom: 2em;
+//             font-size: large;
+//         }
+//         .foot1 {
+//             min-width: 35%;
+//             justify-content: left;
+//             .font {
+//                 font-size: 36px;
+//             }
+//             span {
+//                 text-align: left;
+//             }
         
             
-        }
-        .foot2 {
-            width: 300px;
-            a {
-                padding: 5px 10px;
-                padding-left: $pzero;
-                text-decoration: none;
-                color: white;   
-            }
-        }
-        .foot3 {
-            max-width: 370px;
-        }    
+//         }
+//         .foot2 {
+//             // width: 300px;
+//             a {
+//                 padding: 5px 10px;
+//                 padding-left: $pzero;
+//                 text-decoration: none;
+//                 color: white;   
+//             }
+//         }
+//         .foot3 {
+//             min-width: 35%;
+//         }    
         
-    }
-    .foot4 {
-        padding: 20px;
-        background-color: $red;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        bottom: $pzero;    
-        .one {   
-            width: 450px;
-        }
-        .two {
-            width: 450px;
-            a {
-                color: white;
+//     }
+//     .foot4 {
+//         padding: 20px;
+//         background-color: $red;
+//         display: flex;
+//         justify-content: center;
+//         flex-wrap: wrap;
+//         bottom: $pzero;    
+//         .one {   
+//             width: 450px;
+//         }
+//         .two {
+//             width: 450px;
+//             a {
+//                 color: white;
                 
-            }
-        }
-    }
-}
+//             }
+//         }
+//     }
+// }
 
-@media only screen and (max-width : 1000px)
-{
-    .main-foot {
-        display: flex;
-        flex-direction: column;
-        max-width: 900px;
-    }
-    .foot1 {
-        order: 3;
-        width: 700px !important;    
-        justify-content: left !important;
-        margin-top: -100px;
-        img {
-            width: 35%;
-        }
-        .font {
-            font-size: 45px !important;
-        }
-    }
-    .foot2 {
-        order: 1;
-    }
-    .foot3{
-        order: 2;
-    }
-}
+// @media only screen and (max-width : 1000px)
+// {
+//     .main-foot {
+//         display: flex;
+//         flex-direction: column;
+//         max-width: 900px;
+//     }
+//     .foot1 {
+//         order: 3;
+//         width: 700px !important;    
+//         justify-content: left !important;
+//         margin-top: -100px;
+//         img {
+//             width: 35%;
+//         }
+//         .font {
+//             font-size: 45px !important;
+//         }
+//     }
+//     .foot2 {
+//         order: 1;
+//     }
+//     .foot3{
+//         order: 2;
+//     }
+// }
 
-@media screen and (max-width : 720px) {
-    .foot1 {
-        margin-top: 0px !important;
-        align-items: center;
-    }
-}
-@media only screen and (max-width : 700px)
-{
-    .main-foot {
-        display: flex;
-        flex-direction: column !important;
-        padding-left: 30px !important;
+// @media screen and (max-width : 720px) {
+//     .foot1 {
+//         margin-top: 0px !important;
+//         align-items: center;
+//     }
+// }
+// @media only screen and (max-width : 700px)
+// {
+//     .main-foot {
+//         display: flex;
+//         flex-direction: column !important;
+//         padding-left: 30px !important;
         
-    }
-    .foot1 {
-        order: 3;
-        max-width: 100%;
-        justify-content: left;
-    }
-    .foot2 {
-        order: 1;
-        margin-top: 0% !important;
-        min-width: 200px !important;
-    }
-    .foot3{
-        order: 2;
-    }
-    .foot4 {
-        font-size: smaller;
-    }
-}
+//     }
+//     .foot1 {
+//         order: 3;
+//         max-width: 100%;
+//         justify-content: left;
+//     }
+//     .foot2 {
+//         order: 1;
+//         margin-top: 0% !important;
+//         min-width: 200px !important;
+//     }
+//     .foot3{
+//         order: 2;
+//     }
+//     .foot4 {
+//         font-size: smaller;
+//     }
+// }
