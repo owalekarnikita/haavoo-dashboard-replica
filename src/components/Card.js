@@ -114,7 +114,7 @@ const Card = () => {
   return (
     <div className=''>
         <div class="rounded2 border">
-              <h4 className='fs-5 bg-secondary p-3 rounded-top '><b>Type Business</b></h4>
+              <h5 className='bg-secondary p-3 rounded-top p-1'><b>Type Business</b></h5>
               <div className='p-2 text-secondary'> 
                 <span className='p-3 fs-6'> <input type='checkbox'/> Individual </span><br></br>
                 <span className='p-3 fs-6'> <input type='checkbox'/> Shop/Office </span>
@@ -122,13 +122,13 @@ const Card = () => {
         </div>
         <br/>
         <div class="rounded2 border">
-            <h4 className='bg-secondary p-3 rounded-top p-1'><b> Category </b></h4>
+            <h5 className='bg-secondary p-3 rounded-top p-1'><b> Category </b></h5>
             <div className='p-3 text-secondary overflow-auto' style={{height : '600px'}}>
             { data.map((d , index)=> {
                 return(
                     <Accordion className='text-secondary' flush>
                         <Accordion.Item eventKey="0">
-                            <Accordion.Header className='text-secondary fs-6 fw-normal p-0 m-0'> <input type='checkbox' className=''/> &nbsp; {d.main}</Accordion.Header>
+                            <Accordion.Header className='text-secondary fs-6 fw-normal'> <input type='checkbox' className=''/> &nbsp; {d.main}</Accordion.Header>
                             <Accordion.Body>
                             {d.others.map((a, index)=> {
                                                     return( <div key={index} className='text-secondary'><input type='checkbox'/> {a} <br></br></div>
@@ -142,8 +142,8 @@ const Card = () => {
             </div>
         </div>
         <br/>
-        <div class="rounded2 border ">
-              <h4 className='fs-5 bg-secondary p-3 rounded-top' ><b> Area </b></h4>
+        <div class="rounded2 border">
+              <h5 className='bg-secondary p-3 rounded-top p-1' ><b> Area </b></h5>
               <div className=' overflow-auto text-secondary ps-2'  style={{ height : '500px'}}> 
                 <span className='p-3 fs-6'> <input type='checkbox'/> Abdurahiman Nagar </span><br></br>
                 <span className='p-3 fs-6'> <input type='checkbox'/> Adakkakundu </span><br/>

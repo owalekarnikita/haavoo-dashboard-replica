@@ -43,7 +43,7 @@ const Main = () => {
         <div className='container'>
           <div className='d-flex justify-content-between pt-2 pb-2'>
             <div className=''>
-              <span className='filter-btn d-lg-none d-sm-block fw-bold fs-6' onClick={filterHandler}> Filter</span>
+              <span className='filter-btn d-lg-none d-block fw-bold fs-6' onClick={filterHandler}> Filter</span>
             </div>
             <div className=''>
              <Dropdown>
@@ -64,7 +64,7 @@ const Main = () => {
         <br/>
       <div className={isClicked ?' show h-100 position-fixed top-0 bg-white p-2 pt-3 overflow-auto' : 'sidenav hide'}>
         <div className='d-flex justify-content-between ps-3 pe-3 pt-0 mt-0 pb-3'>
-          <span className='text-danger'> Filter </span>
+          <span className='text-danger fw-bold'> Filter </span>
           <span className='' onClick={closeHandler}> <AiOutlineClose /></span>
         </div>
         <div className='card1'>
@@ -74,7 +74,7 @@ const Main = () => {
               {/* Main section */}
       <div className='main-sec container'>
         <div className='d-flex justify-content-between gap-4'>
-          <div className='col-lg-3 col-sm-0 d-lg-block d-sm-none'>
+          <div className='col-lg-3 col-0 d-lg-block d-none'>
             <Card />
           </div>
 

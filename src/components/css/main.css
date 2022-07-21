@@ -4,6 +4,7 @@
 
 .main-div .active {
   background-color: #ff9d00;
+  color: black !important;
 }
 
 .main-div .sidenav {

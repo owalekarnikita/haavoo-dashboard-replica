@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import "./css/header.css";
 import { IoMdPin} from "react-icons/io";
 import { AiFillCaretDown } from "react-icons/ai";
-import {NavLink, Link} from 'react-router-dom';
+import {NavLink, Link, Outlet} from 'react-router-dom';
 import { FiSearch } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Login from './Login';
@@ -54,23 +54,26 @@ const Header = () => {
     <header>
         <div className='container text-white main-head'>
             <div className='d-flex justify-content-between pt-2'>
-                <span className='d-sm-none d-lg-block'> Customer Care: +91 90747 97177 </span>
+                <span className='d-none d-lg-block'> Customer Care: +91 90747 97177 </span>
                 <span className='d-flex gap-1'>
-                    <span className='d-lg-block d-sm-none mt-1'><span><IoMdPin /></span> Select Location </span> 
-                    <span className='p-2 d-lg-none d-sm-block' onClick={clickHandler}> <GiHamburgerMenu style={{ fontSize: "36px" }}/></span> 
+                    <span className='d-lg-block d-none mt-1'><span><IoMdPin /></span> Select Location </span> 
+                    <span className='p-2 d-lg-none d-block' onClick={clickHandler}> <GiHamburgerMenu style={{ fontSize: "36px" }}/></span> 
                     <span onClick={cityHandler} className='mt-lg-1 mt-sm-3'><span className='border rounded-pill p-1'>{cities[selectedCity]}<span className='down'><AiFillCaretDown/></span> </span></span>
                 </span>
 
+                {/* Nav div  for small devices md and below*/}
                 <div className={isClicked ? 'd-block bg-black p-3 w-75 w-md-50 position-absolute mt-5 ms-5 rounded ' : 'd-none w-0'} id='#collapsibleNavbar'>
-                    <Link to='/' className='text-white text-decoration-none'> Home </Link>
+                    <Link to='/home' className='text-white text-decoration-none'> Home </Link>
                     <hr></hr>
                     <Link to='/about' className='text-white text-decoration-none'> About </Link>
                     <hr></hr>
                     <Link to='/contact' className='text-white text-decoration-none'> Contact</Link>
                     <br/>
-                    <button className='d-md-none d-sm-block rounded-pill bg-warning p-2 mt-2'> Register My Business </button> &nbsp;
+                    <Outlet />
+                    <button className='d-md-none d-block rounded-pill bg-warning p-2 mt-2'> Register My Business </button> &nbsp;
                 </div>
 
+                    {/* Select city div */}
                 <div className={isCity ? 'select-city city-show' : 'select-city city-hide'}>
                 <span className='close-icon' onClick={cityCloseHandler}> <AiOutlineClose /></span>
                 <h2 className='fs-5'> Select Your City or Location </h2>
@@ -105,19 +108,21 @@ const Header = () => {
                     <span> Wayanad </span>
                 </div>
             </div>
-
+                {/* Select city div finished */}
         </div>
 
-        <div className='d-md-flex flex-md-row flex-sm-column justify-content-between pt-3'>
-                <span className='order-lg-first order-sm-last'><img src={require('./images/logo.png')} alt='logo'/></span>
-                <span className='pt-3 d-sm-none d-lg-block'>
-                    <NavLink to='/' className='text-decoration-none text-white p-2'> Home </NavLink> |
+            {/* second row of header */}
+        <div className='d-md-flex flex-md-row flex-column justify-content-between pt-3'>
+                <span className='order-lg-first order-sm-3'><img src={require('./images/logo.png')} alt='logo'/></span>
+                <span className='pt-3 d-none d-lg-block'>
+                    <NavLink to='/home' className='text-decoration-none text-white p-2'> Home </NavLink> |
                     <NavLink to='/about' className='text-decoration-none text-white p-2'> About Us </NavLink> |
                     <NavLink to='/contact' className='text-decoration-none text-white p-2'> Contact Us </NavLink>
+                    <Outlet />
                 </span>
                 
-                <span className='pt-1 pb-3 d-flex order-lg-last order-sm-first'>
-                    <button className='btn btn-warning rounded-pill text-white fw-bold d-md-block d-sm-none'> Register My Business </button>&nbsp;&nbsp;
+                <span className='pt-1 pb-3 d-flex order-lg-3 order-sm-first'>
+                    <button className='btn btn-warning rounded-pill text-white fw-bold d-md-block d-none'> Register My Business </button>&nbsp;&nbsp;
                     <button className='btn btn-danger rounded-pill text-white fw-bold loginbtn'> Login/Sign Up <AiFillCaretDown/> </button>
                     <div className='login-div'>
                         <Login />
@@ -125,6 +130,7 @@ const Header = () => {
                 </span>
             </div>
 
+                {/* Third row of header */}
             <div className='d-md-flex justify-content-between flex-fill pb-3 pt-3 gap-3'>
                 <select className='p-2 rounded col-md-4 col-12 '>
                     <option>Any Area</option> 
@@ -138,7 +144,7 @@ const Header = () => {
                 </select>
                 <div className='searchbtn rounded col-md-8 col-12  bg-white d-flex mt-2 mt-md-0'>
                     <input type='search' id='search' placeholder='Search for anything' className='btn w-100 text-start'/>
-                    <button className='btn bg-danger searchbtn p-2 ps-3 pe-3 rounded-end text-white fs-4'> <FiSearch/></button>
+                    <Link to='/' className='bg-danger searchbtn p-2 ps-3 pe-3 rounded-end text-white fs-4'> <FiSearch/></Link>
                 </div>
 
             </div>

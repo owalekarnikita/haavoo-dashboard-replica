@@ -44,3 +44,6 @@
 .word-spacing {
         word-spacing: 2px;
 }
+.active {
+        color: #e51c1c !important;
+}

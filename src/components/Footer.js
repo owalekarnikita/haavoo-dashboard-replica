@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
-// import "./css/footer.css";
+import "./css/footer.css";
 import { AiFillFacebook ,AiOutlineTwitter,AiFillYoutube,AiFillLinkedin,AiFillInstagram,AiOutlineCopyright } from "react-icons/ai";
 
 const Footer = () => {
@@ -8,7 +8,8 @@ const Footer = () => {
     <footer>
     <div className='foot-div container text-white'>
     <div className='main-foot d-lg-flex row justify-content-between pt-4'>
-        <div className='foot1 p-2 col-lg-4 col-md-6 order-lg-first order-sm-last'>
+
+        <div className='foot1 p-2 col-lg-4 col-md-6 col-12 order-lg-first order-last'>
             <span> <b className='fs-5 fw-bold'> KEEP IN TOUCH </b></span><br/>
             <span className='fs-3 pt-1'> <AiFillFacebook /> <AiOutlineTwitter /> <AiFillYoutube /> <AiFillLinkedin /> <AiFillInstagram /> </span>
             <br/>
@@ -26,7 +27,7 @@ const Footer = () => {
             </div>
         </div>
 
-        <div className='foot2 p-2 col-lg-4 col-md-6 order-lg-2 order-sm-first'>
+        <div className='foot2 p-2 col-lg-4 col-md-6 order-lg-2 col-12 order-first'>
             <b className='fs-5 fw-bold'>LISTING BY CATEGORIES </b>
             <br/>
             <div className='lh-lg word'>
@@ -60,7 +61,7 @@ const Footer = () => {
             </div>
         </div>
         
-        <div className='foot3 p-2 col-lg-4 col-md-6 order-lg-last order-sm-2'>
+        <div className='foot3 p-2 col-lg-4 col-md-6 col-12 order-lg-last order-2'>
                 <b className='fs-5 fw-bold'> BOOK PROFESSIONALS FROM YOUR PHONE </b>
                 <img src='../images/mobile.png' className='mw-100'/>
         </div>
@@ -68,11 +69,11 @@ const Footer = () => {
     </div>
     <div className='bg-danger'>
         <div className='container text-white'>
-        <div className='foot4 d-lg-flex row justify-content-between fs-6 p-3'>
-            <span className='col-md-6 col-sm-12'>
+        <div className='foot4 d-lg-flex row justify-content-between fs-6 pt-3 pb-3'>
+            <span className='col-md-6 col-12'>
                 Copyright <span className='dwn'><AiOutlineCopyright/></span> 2020 Haavoo. ALL RIGHTS RESERVED 
             </span>
-            <span className='col-md-6 col-sm-12'>
+            <span className='col-md-6 col-12 text-md-end'>
                 Designed and Developed By <a href='tarkashilpa.com' className=' text-white'>tarkashilpa.com</a>
             </span>
         </div>
